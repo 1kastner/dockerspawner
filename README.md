@@ -107,7 +107,7 @@ jupyterhub:
   hostname: jupyterhub
   # Permit communication with the host's docker server
   volumes:
-    - "/var/run/docker.sock:/var/run/docker.sock"
+    - "/var/run/docker.sock:/var/run/docker.sock:ro"
   # Ensure Hub and Notebook servers are on the same network
   networks:
     - jupyterhub_network
